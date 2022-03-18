@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Author from "./Author";
+import PrimaryButton from './PrimaryButton';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="author-profile">
+      	<Author name="Alvin"  
+        imageUrl="https://avatars.githubusercontent.com/u/43749581?v=4" />
+        <PrimaryButton
+         width="30%"
+         height="45px"
+         backgroundColor="blue"
+         buttonText="Contact me"
+         color="white"
+         border="none"
+         fontSize=".89rem"
+         fontWeight="600"
+         margin=".8rem" 
+        />
+      </div>
     </div>
   );
 }
